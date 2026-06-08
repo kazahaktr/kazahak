@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { getLatestPosts } from '@/data/blog-posts'
 
 export const metadata: Metadata = {
-  title: 'Kaza Sonrası Değer Kaybı Danışmanlığı | hasardanismanlik.com.tr',
+  title: 'Kaza Sonrası Değer Kaybı Danışmanlığı | KazaHak',
   description: 'Kaza mı geçirdiniz? Araç değer kaybınızı ücretsiz hesaplayın. Uzman danışmanlık ile sigorta şirketinden hakkınızı alın.',
 }
 
@@ -89,6 +89,30 @@ export default function HomePage() {
                 <div className="text-brand font-display font-bold text-xs tracking-widest mb-1">ADIM {s.n}</div>
                 <div className="font-display text-2xl font-bold text-navy mb-2">{s.title}</div>
                 <div className="text-slate-400 text-sm leading-relaxed">{s.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="py-16 px-4 bg-slate-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-display text-4xl font-extrabold text-navy text-center mb-2">Müşterilerimiz Ne Diyor?</h2>
+          <p className="text-slate-400 text-center mb-10 text-sm">Gerçek müvekkil deneyimleri</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { isim: 'Mehmet K.', sehir: 'Antalya', yorum: 'Kaza sonrası sigortadan sadece tamir bedelini almayı bekliyordum. KazaHak sayesinde ek olarak 38.000 ₺ değer kaybı tazminatı aldım. Süreç çok profesyoneldi.', puan: 5, arac: 'Toyota Corolla 2021' },
+              { isim: 'Ayşe T.', sehir: 'İstanbul', yorum: 'Sigorta şirketi ilk başta "değer kaybı ödemeyiz" dedi. Ekibin müdahalesiyle 3 haftada 52.000 ₺ ödeme yapıldı. Kesinlikle tavsiye ederim.', puan: 5, arac: 'BMW 320i 2022' },
+              { isim: 'Hasan Y.', sehir: 'İzmir', yorum: 'Online hesaplama aracı çok kullanışlı. Araç bilgilerimi girdim, tahmini tutarı öğrendim. Danışmanları da çok ilgili ve bilgiliydi.', puan: 5, arac: 'Volkswagen Golf 2020' },
+            ].map(t => (
+              <div key={t.isim} className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col">
+                <div className="flex text-brand mb-3 text-lg">{'★'.repeat(t.puan)}</div>
+                <p className="text-slate-600 text-sm leading-relaxed flex-1 mb-4 italic">&ldquo;{t.yorum}&rdquo;</p>
+                <div className="border-t border-slate-100 pt-4">
+                  <p className="font-bold text-navy text-sm">{t.isim}</p>
+                  <p className="text-slate-400 text-xs">{t.sehir} • {t.arac}</p>
+                </div>
               </div>
             ))}
           </div>

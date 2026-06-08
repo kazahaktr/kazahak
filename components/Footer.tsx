@@ -9,6 +9,12 @@ const LINKS = [
   { href: '/hizmetler', label: 'Hizmetler' },
   { href: '/blog', label: 'Blog' },
   { href: '/danisma', label: 'Ücretsiz Danışma' },
+  { href: '/hakkimizda', label: 'Hakkımızda' },
+]
+
+const LEGAL = [
+  { href: '/kvkk', label: 'KVKK Aydınlatma Metni' },
+  { href: '/gizlilik-politikasi', label: 'Gizlilik Politikası' },
 ]
 
 export default function Footer() {
@@ -61,8 +67,13 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-6 text-xs text-white/25 space-y-1">
-          <p>© 2023-2026 Hasar Danışmanlık. Tüm hakları saklıdır.</p>
+        <div className="border-t border-white/10 pt-6 text-xs text-white/25 space-y-2">
+          <div className="flex flex-wrap gap-x-4 gap-y-1 mb-2">
+            {LEGAL.map(l => (
+              <Link key={l.href} href={l.href} className="hover:text-white/60 transition-colors">{l.label}</Link>
+            ))}
+          </div>
+          <p>© 2023-2026 KazaHak. Tüm hakları saklıdır.</p>
           <p>By <span className="text-white/40">Sirius Group AI &amp; Technology Co. Ltd.</span></p>
           <p>Bu site hukuki tavsiye vermez; bilgilendirme ve yönlendirme amaçlıdır.</p>
         </div>
