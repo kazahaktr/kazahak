@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { calcDegerKaybi, tl, parseNum, fmtNum, BOLGE, BRANDS, KM_OPTS, YEARS, type CalcResult } from '@/lib/calc'
 
-const WA = process.env.NEXT_PUBLIC_WA_NUMBER || '905XXXXXXXXX'
+const WA = '905553287509'
 
 const STEPS = ['Araç Bilgileri', 'Kaza Bilgileri', 'Sonuç & Danışma']
 
