@@ -28,7 +28,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex flex-col leading-none">
           <span className="font-display text-[21px] font-bold text-white tracking-tight">
-            kazahak<span className="text-brand">.com.tr</span>
+            Kaza<span className="text-brand">Hak</span>
           </span>
           <span className="text-[9px] text-white/35 uppercase tracking-widest hidden sm:block mt-0.5">
             Hasar & Değer Kaybı Danışmanlığı

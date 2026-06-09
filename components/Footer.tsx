@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="font-display text-xl font-bold mb-2">
-              kazahak<span className="text-brand">.com.tr</span>
+              Kaza<span className="text-brand">Hak</span>
             </div>
             <p className="text-white/45 text-sm leading-relaxed">
               Kaza sonrası değer kaybı ve hasar danışmanlığı. Türkiye genelinde hizmet.
@@ -59,8 +59,8 @@ export default function Footer() {
               </p>
               <p>
                 ✉️{' '}
-                <a href="mailto:info@kazahak.com.tr" className="hover:text-white transition-colors">
-                  info@kazahak.com.tr
+                <a href="mailto:info@kazahak.com" className="hover:text-white transition-colors">
+                  info@kazahak.com
                 </a>
               </p>
               <p>📍 Antalya — Türkiye geneli</p>

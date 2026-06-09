@@ -20,7 +20,7 @@ export default function KvkkPage() {
           olarak anılacaktır) tarafından hazırlanmıştır.
         </p>
         <p><strong>Adres:</strong> Antalya, Türkiye<br />
-        <strong>E-posta:</strong> info@kazahak.com.tr</p>
+        <strong>E-posta:</strong> info@kazahak.com</p>
 
         <h2>2. İşlenen Kişisel Veriler</h2>
         <p>Web sitemiz aracılığıyla aşağıdaki kişisel verileriniz işlenebilmektedir:</p>
@@ -74,7 +74,7 @@ export default function KvkkPage() {
           <li>Zarara uğramanız hâlinde tazminat talep etme</li>
         </ul>
         <p>
-          Bu haklarınızı kullanmak için <strong>info@kazahak.com.tr</strong> adresine e-posta
+          Bu haklarınızı kullanmak için <strong>info@kazahak.com</strong> adresine e-posta
           gönderebilirsiniz.
         </p>
 

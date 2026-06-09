@@ -16,7 +16,7 @@ export default function GizlilikPage() {
         <h2>1. Genel Bilgi</h2>
         <p>
           KazaHak olarak gizliliğinize saygı duyuyor ve kişisel verilerinizi korumayı birincil
-          önceliğimiz olarak kabul ediyoruz. Bu politika, <strong>kazahak.com.tr</strong> adresinde
+          önceliğimiz olarak kabul ediyoruz. Bu politika, <strong>kazahak.com</strong> adresinde
           hangi bilgilerin toplandığını ve nasıl kullanıldığını açıklamaktadır.
         </p>
 
@@ -72,7 +72,7 @@ export default function GizlilikPage() {
         <h2>7. Haklarınız</h2>
         <p>
           KVKK kapsamındaki haklarınız için <a href="/kvkk">KVKK Aydınlatma Metni</a>ni inceleyiniz.
-          Her türlü soru ve talepleriniz için: <strong>info@kazahak.com.tr</strong>
+          Her türlü soru ve talepleriniz için: <strong>info@kazahak.com</strong>
         </p>
 
         <h2>8. Değişiklikler</h2>

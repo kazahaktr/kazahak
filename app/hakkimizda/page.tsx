@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Hakkımızda — KazaHak',
-  description: 'KazaHak ekibi, misyonu ve değer kaybı danışmanlığındaki uzmanlığı hakkında bilgi alın.',
+  description: 'Kazahak, trafik kazaları sonrası araç değer kaybı, maddi hasar ve yaralanmalı trafik kazalarından kaynaklanan tazminat süreçlerinde profesyonel danışmanlık hizmeti sunmaktadır. Türkiye\'nin 81 ilinde uzaktan danışmanlık.',
 }
 
 const DEGERLER = [
@@ -84,6 +84,33 @@ export default function HakkimizdaPage() {
         <p className="text-sm text-slate-500">
           📍 <strong className="text-navy">Merkez:</strong> Antalya &nbsp;|&nbsp;
           🌍 <strong className="text-navy">Hizmet Bölgesi:</strong> Türkiye geneli (online danışmanlık)
+        </p>
+      </div>
+
+      {/* SEO İçerik Bloku */}
+      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 mb-10 prose prose-slate max-w-none">
+        <h2 className="font-display text-2xl font-bold text-navy mb-4">KazaHak — Trafik Kazalarında Profesyonel Danışmanlık</h2>
+        <p className="text-slate-600 leading-relaxed">
+          Kazahak, trafik kazaları sonrası ortaya çıkan araç değer kaybı, maddi hasar ve yaralanmalı
+          trafik kazalarından kaynaklanan tazminat süreçlerinde profesyonel danışmanlık hizmeti
+          sunmaktadır. Türkiye genelinde hizmet veren uzman ekibimiz, kaza mağdurlarının yasal
+          haklarını eksiksiz şekilde öğrenmelerine ve hak ettikleri tazminatlara ulaşmalarına destek
+          olmaktadır.
+        </p>
+        <p className="text-slate-600 leading-relaxed">
+          Araç değer kaybı başvuruları, hasar tazminatları, yaralanmalı trafik kazası tazminatları,
+          iş göremezlik zararları ve kaza kaynaklı maddi kayıpların değerlendirilmesi konularında hızlı,
+          şeffaf ve sonuç odaklı çözümler sunuyoruz. Trafik kazası sonrasında oluşan mağduriyetlerin
+          giderilmesi için gerekli başvuru ve takip süreçlerinde danışanlarımızın yanında yer alıyoruz.
+        </p>
+        <p className="text-slate-600 leading-relaxed">
+          <strong className="text-navy">Türkiye&apos;nin 81 ilinde</strong> uzaktan başvuru ve danışmanlık
+          imkanı sağlayarak, bulunduğunuz şehir fark etmeksizin profesyonel destek almanızı mümkün
+          kılıyoruz. Araç değer kaybı hesaplama, maddi hasarlı trafik kazaları, yaralanmalı trafik
+          kazaları ve tazminat süreçleri hakkında bilgi almak için bizimle iletişime geçebilirsiniz.
+        </p>
+        <p className="font-bold text-navy">
+          KazaHak — Trafik Kazalarında Haklarınızı Koruyan Güvenilir Çözüm Ortağınız.
         </p>
       </div>
 

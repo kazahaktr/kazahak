@@ -1,9 +1,8 @@
 import Script from 'next/script'
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+const GA_ID = 'G-6BJDCRP7WF'
 
 export default function GoogleAnalytics() {
-  if (!GA_ID) return null
   return (
     <>
       <Script
