@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const WA = '905553287509'
 const WA_MSG = encodeURIComponent('Merhaba, değer kaybı konusunda bilgi almak istiyorum.')
@@ -23,8 +24,14 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="font-display text-xl font-bold mb-2">
-              Kaza<span className="text-brand">Hak</span>
+            <div className="bg-white inline-block rounded-xl p-2 mb-3">
+              <Image
+                src="/logo.png"
+                alt="KazaHak — Hasar ve Tazminat Danışmanlığı"
+                width={120}
+                height={120}
+                className="object-contain w-28 h-auto"
+              />
             </div>
             <p className="text-white/45 text-sm leading-relaxed">
               Kaza sonrası değer kaybı ve hasar danışmanlığı. Türkiye genelinde hizmet.

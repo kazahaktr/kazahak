@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const WA = '905553287509'
@@ -26,13 +27,25 @@ export default function Header() {
   return (
     <header className="bg-navy sticky top-0 z-50 shadow-lg">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="font-display text-[21px] font-bold text-white tracking-tight">
-            Kaza<span className="text-brand">Hak</span>
-          </span>
-          <span className="text-[9px] text-white/35 uppercase tracking-widest hidden sm:block mt-0.5">
-            Hasar & Değer Kaybı Danışmanlığı
-          </span>
+        <Link href="/" className="flex items-center gap-2.5">
+          <div className="bg-white rounded-xl p-1 flex items-center justify-center shrink-0" style={{ width: 44, height: 44 }}>
+            <Image
+              src="/logo.png"
+              alt="KazaHak"
+              width={36}
+              height={36}
+              className="object-contain w-9 h-9"
+              priority
+            />
+          </div>
+          <div className="flex flex-col leading-none">
+            <span className="font-display text-[20px] font-bold text-white tracking-tight">
+              Kaza<span className="text-brand">Hak</span>
+            </span>
+            <span className="text-[9px] text-white/35 uppercase tracking-widest hidden sm:block mt-0.5">
+              Hasar &amp; Değer Kaybı Danışmanlığı
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-5">
