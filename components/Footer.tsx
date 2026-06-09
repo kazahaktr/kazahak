@@ -55,7 +55,13 @@ export default function Footer() {
               <p>
                 📸{' '}
                 <a href="https://instagram.com/kazahak" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  @kazahak
+                  Instagram: @kazahak
+                </a>
+              </p>
+              <p>
+                🎵{' '}
+                <a href="https://tiktok.com/@kazahak" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  TikTok: @kazahak
                 </a>
               </p>
               <p>

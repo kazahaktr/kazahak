@@ -5,7 +5,7 @@ const WA = '905553287509'
 const WA_MSG = encodeURIComponent('Merhaba, değer kaybı konusunda ücretsiz danışma almak istiyorum.')
 
 export default function DanismaPage() {
-  const [f, setF] = useState({ ad: '', tel: '', eposta: '', arac: '', mesaj: '' })
+  const [f, setF] = useState({ ad: '', tel: '', eposta: '', arac: '', piyasa: '', hasar: '', mesaj: '' })
   const [err, setErr] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(false)
   const [done, setDone] = useState(false)
@@ -29,7 +29,13 @@ export default function DanismaPage() {
           ad:     f.ad,
           tel:    f.tel,
           kaynak: 'danisma-formu',
-          notlar: [f.eposta && `E-posta: ${f.eposta}`, f.arac && `Araç: ${f.arac}`, f.mesaj].filter(Boolean).join(' | '),
+          notlar: [
+            f.eposta  && `E-posta: ${f.eposta}`,
+            f.arac    && `Araç: ${f.arac}`,
+            f.piyasa  && `Piyasa Değeri: ${f.piyasa} ₺`,
+            f.hasar   && `Hasar Bedeli: ${f.hasar} ₺`,
+            f.mesaj,
+          ].filter(Boolean).join(' | '),
         }),
       })
     } catch { /* fail silently */ }
@@ -39,6 +45,11 @@ export default function DanismaPage() {
 
   const inp = (k: string) =>
     `w-full px-3.5 py-3 border-2 rounded-xl text-sm bg-white text-slate-800 transition-colors focus:outline-none focus:border-brand ${err[k] ? 'border-red-400' : 'border-slate-200'}`
+  const lbl = (text: string, req?: boolean) => (
+    <label className="block text-xs font-semibold text-slate-600 mb-1.5">
+      {text} {req ? <span className="text-brand">*</span> : <span className="text-slate-400 font-normal">(Opsiyonel)</span>}
+    </label>
+  )
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-12">
@@ -54,7 +65,7 @@ export default function DanismaPage() {
           <p className="text-slate-500 text-sm mb-6">En geç <strong>24 saat</strong> içinde uzmanımız sizi arayacak.</p>
           <a href={`https://wa.me/${WA}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl transition-colors">
-            💬 WhatsApp'tan Yaz
+            💬 WhatsApp&apos;tan Yaz
           </a>
         </div>
       ) : (
@@ -63,7 +74,7 @@ export default function DanismaPage() {
           <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-6 flex items-center gap-4">
             <div className="text-3xl">📱</div>
             <div className="flex-1">
-              <p className="font-bold text-navy text-sm">Hızlı Yol: WhatsApp'tan Yazın</p>
+              <p className="font-bold text-navy text-sm">Hızlı Yol: WhatsApp&apos;tan Yazın</p>
               <p className="text-slate-500 text-xs mt-0.5">Anında cevap — bilgileri mesajla iletin</p>
             </div>
             <a href={`https://wa.me/${WA}?text=${WA_MSG}`} target="_blank" rel="noopener noreferrer"
@@ -75,32 +86,51 @@ export default function DanismaPage() {
           <div className="text-xs text-slate-400 text-center mb-6">— veya formu doldurun —</div>
 
           <form onSubmit={submit} className="space-y-4" noValidate>
+            {/* Zorunlu alanlar */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-slate-600 mb-1.5">Ad Soyad *</label>
+                {lbl('Ad Soyad', true)}
                 <input className={inp('ad')} placeholder="Adınız Soyadınız" value={f.ad} onChange={e => up('ad', e.target.value)} />
                 {errEl('ad')}
               </div>
               <div>
-                <label className="block text-xs font-semibold text-slate-600 mb-1.5">Telefon *</label>
+                {lbl('Telefon', true)}
                 <input className={inp('tel')} placeholder="0 5XX XXX XX XX" value={f.tel} onChange={e => up('tel', e.target.value)} />
                 {errEl('tel')}
               </div>
+            </div>
+
+            {/* İletişim & Araç */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-slate-600 mb-1.5">E-posta</label>
+                {lbl('E-posta')}
                 <input className={inp('eposta')} placeholder="email@örnek.com" value={f.eposta} onChange={e => up('eposta', e.target.value)} />
               </div>
               <div>
-                <label className="block text-xs font-semibold text-slate-600 mb-1.5">Araç Bilgisi</label>
+                {lbl('Araç Bilgisi')}
                 <input className={inp('arac')} placeholder="Marka, model, yıl" value={f.arac} onChange={e => up('arac', e.target.value)} />
               </div>
             </div>
+
+            {/* Değer alanları */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                {lbl('Piyasa Değeri')}
+                <input className={inp('piyasa')} placeholder="₺ örn: 850.000" value={f.piyasa} onChange={e => up('piyasa', e.target.value)} type="text" />
+              </div>
+              <div>
+                {lbl('Hasar / Onarım Bedeli')}
+                <input className={inp('hasar')} placeholder="₺ örn: 120.000" value={f.hasar} onChange={e => up('hasar', e.target.value)} type="text" />
+              </div>
+            </div>
+
             <div>
-              <label className="block text-xs font-semibold text-slate-600 mb-1.5">Kaza Hakkında Kısaca</label>
+              {lbl('Kaza Hakkında Kısaca')}
               <textarea rows={3} className={`${inp('mesaj')} resize-none`}
                 placeholder="Kaza tarihi, hasar durumu ve sorularınız..."
                 value={f.mesaj} onChange={e => up('mesaj', e.target.value)} />
             </div>
+
             <button type="submit" disabled={loading}
               className="w-full py-3.5 bg-brand hover:bg-orange-600 disabled:opacity-60 text-white font-bold rounded-xl transition-colors text-sm">
               {loading ? 'Gönderiliyor…' : 'Danışma Talebi Gönder →'}
