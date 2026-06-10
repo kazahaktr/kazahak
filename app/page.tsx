@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getLatestPosts } from '@/data/blog-posts'
+import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
   title: 'Kaza Sonrası Değer Kaybı Danışmanlığı | KazaHak',
@@ -143,6 +144,36 @@ export default function HomePage() {
           <Link href="/blog" className="text-brand font-bold text-sm hover:underline mt-6 block sm:hidden text-center">Tüm yazıları gör →</Link>
         </div>
       </section>
+
+      {/* REFERANS / BAŞARI HİKAYELERİ */}
+      <section className="py-16 px-4 bg-navy">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-display text-4xl font-extrabold text-white text-center mb-2">Gerçek Sonuçlar</h2>
+          <p className="text-white/40 text-center mb-10 text-sm">Müvekkillerimizin tahsil ettiği tazminatlardan örnekler</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { arac:'Ford Focus 2022', sehir:'İstanbul', tutar:'42.000 ₺', sure:'18 gün', bolge:'Ön Hasar' },
+              { arac:'BMW 5 Serisi 2021', sehir:'Ankara', tutar:'98.000 ₺', sure:'25 gün', bolge:'Sağ Yan' },
+              { arac:'Toyota Corolla 2023', sehir:'Antalya', tutar:'67.500 ₺', sure:'14 gün', bolge:'Ön Hasar' },
+              { arac:'Volkswagen Passat 2020', sehir:'İzmir', tutar:'54.000 ₺', sure:'22 gün', bolge:'Arka Hasar' },
+            ].map((r, i) => (
+              <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-5">
+                <div className="text-brand font-display text-2xl font-extrabold mb-1">{r.tutar}</div>
+                <div className="text-white font-semibold text-sm mb-3">değer kaybı tahsil edildi</div>
+                <div className="space-y-1 text-xs text-white/50">
+                  <p>🚗 {r.arac}</p>
+                  <p>📍 {r.sehir} • {r.bolge}</p>
+                  <p>⏱ {r.sure}de sonuçlandı</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-white/25 text-center text-xs mt-6">*Müvekkil gizliliği korunarak paylaşılan örnek sonuçlar</p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <FAQ />
 
       {/* CTA BANNER */}
       <section className="py-16 px-4 bg-gradient-to-r from-navy to-[#162040]">

@@ -153,6 +153,154 @@ Kendi aracınız için hesaplama aracımızı kullanabilirsiniz.`,
   },
 ]
 
+  {
+    slug: '2026-arac-deger-kaybi-basvurusu',
+    title: '2026 Araç Değer Kaybı Başvurusu: Adım Adım Rehber',
+    excerpt: '2026 yılında araç değer kaybı başvurusu nasıl yapılır? Güncel limitler, başvuru dilekçesi ve dikkat edilmesi gerekenler.',
+    date: '2026-06-05',
+    readTime: 7,
+    category: 'Rehber',
+    featured: true,
+    content: `## 2026 Yılında Değer Kaybı Başvurusu
+
+2026 yılı itibarıyla araç değer kaybı tazminatı talep süreci, Sigorta Bilgi ve Gözetim Merkezi (SBGM) ve güncel Yargıtay içtihatları çerçevesinde yürütülmektedir.
+
+## Başvuru İçin Gerekli Belgeler
+
+- Trafik kaza tespit tutanağı (veya kaza raporu)
+- Araç ruhsatı fotokopisi
+- Hasar fotoğrafları ve onarım faturası
+- Kasko/trafik poliçe bilgileri
+- Kimlik fotokopisi
+
+## Başvuru Adımları
+
+**1. Karşı Tarafın Sigortasına Başvurun**
+Karşı tarafın KASKO veya zorunlu trafik sigortasına yazılı başvuru yapın. KEP (Kayıtlı Elektronik Posta) ile göndermek önerilir — ispat kolaylığı sağlar.
+
+**2. 15 İş Günü Bekleyin**
+Sigorta şirketi yasal olarak 15 iş günü içinde yanıt vermek zorundadır.
+
+**3. Teklif Değerlendirmesi**
+Gelen teklif genellikle gerçek değerin %30–50 altında gelir. KazaHak gibi uzman danışmanlık firmalarıyla teklifi değerlendirin.
+
+**4. Tahkim veya Dava**
+Teklif reddedilirse Sigorta Tahkim Komisyonu (SİGORTA TAHKİM) devreye girer. Başvuru ücreti düşük, süreç ortalama 3–4 ay sürer.
+
+## 2026 Güncel Limitler
+
+Zorunlu trafik sigortasında 2026 yılı teminat limitleri SEDDK tarafından güncellenmektedir. Güncel limitler için sigorta.gov.tr adresini takip edin.`,
+  },
+  {
+    slug: 'sigorta-tahkim-basvurusu',
+    title: 'Sigorta Tahkim Komisyonu Başvurusu Nasıl Yapılır?',
+    excerpt: 'Sigorta şirketi değer kaybı ödemezse tahkim yolu en hızlı çözümdür. Başvuru süreci, ücreti ve dikkat edilmesi gerekenler.',
+    date: '2026-06-07',
+    readTime: 6,
+    category: 'Sigorta',
+    content: `## Sigorta Tahkim Nedir?
+
+Sigorta Tahkim Komisyonu (STK), sigorta şirketiyle uyuşmazlık halinde mahkemeye gitmeden önce başvurulan bağımsız bir çözüm merkezidir. 5684 sayılı Sigortacılık Kanunu çerçevesinde faaliyet gösterir.
+
+## Neden Tahkim?
+
+- Mahkemeye göre çok daha hızlı (3–4 ay)
+- Düşük başvuru ücreti
+- Kararlar sigorta şirketleri için bağlayıcı
+- Online başvuru imkânı (sigortatahkim.org.tr)
+
+## Başvuru Şartları
+
+1. Önce sigorta şirketine yazılı başvuru yapmış olmak
+2. Şirketin ret veya yetersiz teklif vermesi
+3. 15 iş günlük bekleme süresinin dolması
+
+## Başvuru Ücreti
+
+Talep miktarına göre değişir. 2026 yılı için sigortatahkim.org.tr üzerindeki güncel tarife geçerlidir. Karar lehinize çıkarsa başvuru ücreti karşı taraftan alınır.
+
+## Süreç
+
+1. Online başvuru formu + belgeler
+2. Hakem atanması
+3. Tarafların savunma sunması
+4. Hakem kararı (genellikle 3–4 ay)
+5. İtiraz hakkı (15 gün)
+
+Tahkim sürecinde uzman danışmanlık, doğru belge hazırlığı ve talep miktarının isabetli belirlenmesi açısından kritik fark yaratır.`,
+  },
+  {
+    slug: 'hasar-farki-nedir',
+    title: 'Hasar Farkı Nedir? Kasko ile Fark Tazminatı',
+    excerpt: 'Kasko poliçeniz hasar anındaki araç değerine göre değil, poliçe değerine göre ödeme yapıyorsa aradaki farkı talep edebilirsiniz.',
+    date: '2026-06-08',
+    readTime: 5,
+    category: 'Sigorta',
+    content: `## Hasar Farkı Nedir?
+
+Kasko sigortasında "hasar farkı" ya da "fark tazminatı", poliçede yazan sigorta bedeli ile aracın gerçek piyasa değeri arasındaki farktan doğan ek tazminat hakkıdır.
+
+## Neden Ortaya Çıkar?
+
+Araç fiyatları enflasyonla hızla yükselir. Poliçe yılbaşında 800.000 ₺ üzerinden yapılmışsa ama hasar anında araç 1.100.000 ₺ ediyorsa, sigorta şirketi yalnızca 800.000 ₺ öder. Aradaki 300.000 ₺ fark için ek talep hakkınız doğabilir.
+
+## Hangi Durumlarda Uygulanır?
+
+- Aracın tam hasar (pert) ilan edilmesi
+- Poliçe bedelinin gerçek değerin altında kalması
+- Yeni değer sigortası eklenmemiş eski poliçeler
+
+## Nasıl Talep Edilir?
+
+1. Hasar anındaki güncel araç değerini belgelendirin (2. el ilan fiyatları, eksper raporu)
+2. Sigorta şirketine yazılı fark tazminatı talebinde bulunun
+3. Red halinde Sigorta Tahkim veya dava yolu
+
+## Yeni Değer Sigortası
+
+Bazı kasko poliçeleri "yeni değer güvencesi" içerir — hasar anında güncel piyasa değeri ödenir. Poliçenizi kontrol edin; bu güvence yoksa yenileme döneminde ekletebilirsiniz.`,
+  },
+  {
+    slug: 'pert-arac-tazminati',
+    title: 'Pert Araç Tazminatı: Hakkınızın Tamamını Nasıl Alırsınız?',
+    excerpt: 'Aracınız pert ilan edildiyse sigorta şirketinin teklifini doğrudan kabul etmeyin. Gerçek piyasa değerini öğrenin ve farkı talep edin.',
+    date: '2026-06-09',
+    readTime: 8,
+    category: 'Rehber',
+    featured: true,
+    content: `## Pert Araç Nedir?
+
+Onarım maliyeti, aracın hasar öncesi piyasa değerinin %70'ini (kasko poliçelerinde genellikle %80) aşıyorsa araç "pert" (tam hasar) ilan edilir. Bu durumda onarım yapılmaz; araç değeri ödenir.
+
+## Sigorta Şirketi Ne Öder?
+
+Zorunlu trafik sigortası: Karşı tarafın kusurlu olduğu pert kazalarında kaza tarihindeki piyasa değeri ödenir.
+
+Kasko: Poliçede yazılı sigorta bedeli ödenir (güncel değer değil!).
+
+## Neden Düşük Teklif Gelir?
+
+- Sigorta eksperleri genellikle düşük piyasa değeri baz alır
+- Poliçe bedeli güncel değerin gerisinde kalabilir
+- Hurda değeri yüksek gösterilerek net ödeme düşürülür
+
+## Hesaplama Örneği
+
+**2022 model araç — piyasa değeri 1.200.000 ₺**
+- Sigorta teklifi: 950.000 ₺ (hurda payı 120.000 ₺ düşüldü)
+- Gerçek piyasa değeri: 1.200.000 ₺
+- **Fark: 250.000 ₺ — talep edilebilir**
+
+## İtiraz Yolları
+
+1. Bağımsız eksper raporu alın
+2. Sigorta şirketine yazılı itiraz
+3. Sigorta Tahkim Komisyonu (3–4 ay, düşük maliyet)
+4. Asliye Ticaret/Hukuk Mahkemesi
+
+Pert araç davalarında uzman desteği özellikle kritik — sigorta şirketleri bu dosyalarda en sert pazarlığı yapar.`,
+  },
+
 export function getPostBySlug(slug: string) {
   return blogPosts.find(p => p.slug === slug)
 }
