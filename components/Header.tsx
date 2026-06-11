@@ -28,24 +28,24 @@ export default function Header() {
     <header className="bg-navy sticky top-0 z-50 shadow-lg">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="bg-white rounded-xl p-1 flex items-center justify-center shrink-0" style={{ width: 44, height: 44 }}>
+          <span className="w-11 h-11 rounded-xl overflow-hidden shrink-0 bg-navy block">
             <Image
               src="/logo.png"
               alt="KazaHak"
-              width={36}
-              height={36}
-              className="object-contain w-9 h-9"
+              width={52}
+              height={52}
+              className="w-full h-full object-cover scale-110"
               priority
             />
-          </div>
-          <div className="flex flex-col leading-none">
+          </span>
+          <span className="flex flex-col leading-none">
             <span className="font-display text-[20px] font-bold text-white tracking-tight">
               Kaza<span className="text-brand">Hak</span>
             </span>
             <span className="text-[9px] text-white/35 uppercase tracking-widest hidden sm:block mt-0.5">
               Hasar &amp; Değer Kaybı Danışmanlığı
             </span>
-          </div>
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-5">

@@ -24,14 +24,24 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="bg-white inline-block rounded-xl p-2 mb-3">
-              <Image
-                src="/logo.png"
-                alt="KazaHak — Hasar ve Tazminat Danışmanlığı"
-                width={120}
-                height={120}
-                className="object-contain w-28 h-auto"
-              />
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="w-11 h-11 rounded-xl overflow-hidden shrink-0 bg-navy">
+                <Image
+                  src="/logo.png"
+                  alt="KazaHak"
+                  width={52}
+                  height={52}
+                  className="w-full h-full object-cover scale-110"
+                />
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="font-display text-[22px] font-bold text-white tracking-tight">
+                  Kaza<span className="text-brand">Hak</span>
+                </span>
+                <span className="text-[9px] text-white/35 uppercase tracking-widest mt-0.5">
+                  Hasar &amp; Değer Kaybı Danışmanlığı
+                </span>
+              </div>
             </div>
             <p className="text-white/45 text-sm leading-relaxed">
               Kaza sonrası değer kaybı ve hasar danışmanlığı. Türkiye genelinde hizmet.
