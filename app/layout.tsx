@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     default: 'Araç Değer Kaybı Hesaplama | KazaHak',
     template: '%s | KazaHak',
   },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   description: 'Kazahak, trafik kazaları sonrası araç değer kaybı, maddi hasar ve yaralanmalı trafik kazalarından kaynaklanan tazminat süreçlerinde profesyonel danışmanlık hizmeti sunmaktadır. Türkiye\'nin 81 ilinde uzaktan danışmanlık.',
   keywords: 'değer kaybı, değer kaybı hesaplama, hasar danışmanlığı, kaza tazminatı, araç değer kaybı, trafik kazası tazminatı, yaralanmalı kaza tazminatı, Türkiye',
   metadataBase: new URL('https://kazahak.com'),
